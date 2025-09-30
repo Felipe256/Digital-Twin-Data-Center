@@ -1,0 +1,29 @@
+curl --request PUT \
+  --url http://localhost:8080/api/2/policies/org.eclipse.ditto:datacenter \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Basic ZGl0dG86ZGl0dG8=' \
+  --data '{
+    "entries": {
+        "owner": {
+            "subjects": {
+                "nginx:ditto": {
+                    "type": "admin felipe"
+                }
+            },
+            "resources": {
+                "thing:/": {
+                    "grant": ["READ", "WRITE"],
+                    "revoke": []
+                },
+                "policy:/": {
+                    "grant": ["READ", "WRITE"],
+                    "revoke": []
+                },
+                "message:/": {
+                    "grant": ["READ", "WRITE"],
+                    "revoke": []
+                }
+            }
+        }
+    }
+}'

@@ -1,0 +1,113 @@
+/*
+ * Copyright (c) 2017 Contributors to the Eclipse Foundation
+ *
+ * See the NOTICE file(s) distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+.navbar {
+    background-color: rgb(58, 140, 154);
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.info-icon {
+    color: rgb(170,170,170);
+    font-size: 3em;
+}
+
+#coffee.active {
+    -webkit-animation: pulsate 1s ease-out;
+    -moz-animation: pulsate 1s ease-out;
+    -o-animation: pulsate 1s ease-out;
+    animation: pulsate 1s ease-out;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {color: rgb(77, 38, 0); opacity: 1;}
+    50% {color: rgb(130, 60, 0); opacity: 0.75}
+    100% {color: rgb(77, 38, 0); opacity: 1;}
+}
+
+@-moz-keyframes pulsate {
+    0% {color: rgb(77, 38, 0); opacity: 1;}
+    50% {color: rgb(130, 60, 0); opacity: 0.75}
+    100% {color: rgb(77, 38, 0); opacity: 1;}
+}
+
+@-o-keyframes pulsate {
+    0% {color: rgb(77, 38, 0); opacity: 1;}
+    50% {color: rgb(130, 60, 0); opacity: 0.75}
+    100% {color: rgb(77, 38, 0); opacity: 1;}
+}
+
+
+@keyframes pulsate {
+    0% {color: rgb(110, 60, 0); opacity: 1;}
+    50% {color: rgb(130, 60, 0); opacity: 0.75}
+    100% {color: rgb(110, 60, 0); opacity: 1;}
+}
+
+#water.active {
+    color: rgb(0, 102, 255)
+}
+
+.break-word {
+    word-break: break-all;
+}
+
+
+@media (min-width: 768px) {
+    #ditto {
+        padding-top: 4rem;
+    }
+
+    #first-border {
+        border-right: 1px rgb(58, 140, 154) solid;
+        height: 50%;
+        margin-right: 50%;
+        margin-bottom: 2rem;
+        max-height: 160px;
+    }
+
+    #second-border {
+        border-right: 1px rgb(58, 140, 154) solid;
+        height: 50%;
+        margin-right: 50%;
+        margin-top: 2rem;
+        max-height: 160px;
+    }
+}
+@media (max-width: 767px) {
+    #ditto {
+        padding: 4rem;
+    }
+
+    #first-border {
+        position: relative;
+        top: 29px;
+        border-bottom: 1px rgb(58, 140, 154) solid;
+        width: 30%;
+    }
+
+    #second-border {
+        position: relative;
+        bottom: 66px;
+        border-bottom: 1px rgb(58, 140, 154) solid;
+        width: 30%;
+        float: right;
+    }
+}
