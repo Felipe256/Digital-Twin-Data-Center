@@ -161,7 +161,7 @@ class FrontendApp {
             const co2 = this.config.thingJson[idServer].features.ConsumptionAwareness.properties.carbonFootprint;
             const tr = document.createElement('tr');
             tr.innerHTML =  `<tr>
-                                <td>${this.baseUrl + idServer}</td>
+                                <td>${"teste.ditto:server" + idServer}</td>
                                 <td>${energy}</td>
                                 <td>${energy * co2}</td>
                             </tr>`;
